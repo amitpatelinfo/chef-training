@@ -6,3 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+
+include_recipe "chef-client"
+
+#node["chef_client"]["interval"] = "10"
