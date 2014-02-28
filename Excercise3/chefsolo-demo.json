@@ -1,0 +1,3 @@
+{
+	"run-list": {"recipe[java]", "recipe[tomcat]"}	
+}
