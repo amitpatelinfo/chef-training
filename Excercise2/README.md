@@ -1,4 +1,0 @@
-chefrepo
-========
-
-Technext Chef Repo
