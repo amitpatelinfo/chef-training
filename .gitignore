@@ -1,4 +1,4 @@
 .chef
-.vagrant
+.vagrnt
 amitaws.pem
-command.txt
+*.txt

@@ -8,9 +8,16 @@
 #
 
 elb_load_balancer "loadbalancer" do
-	aws_access_key			"#{node['aws']['accessid']}"
-	aws_secret_access_key	"#{node['aws']['secretkey']}"
+	aws_access_key			ENV['AWS_ACCESS_KEY_ID']
+	aws_secret_access_key	ENV['AWS_SECRET_ACCESS_KEY']
 	region					"us-east-1"
 	search_query			"role:webserver"
+	listeners             [
+						    {
+						      "InstancePort"     => 80,
+						      "Protocol"         => "HTTP",
+						      "LoadBalancerPort" => 8080
+						    }
+						  ]
 	action					:create
 end
