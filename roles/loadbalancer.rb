@@ -9,7 +9,7 @@ run_list(
 default_attributes(
  "apache" => {
  	"port" => "80"
- }
+ },
  "build_essential" => {
     "compiletime" => true
   }

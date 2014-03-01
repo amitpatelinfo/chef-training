@@ -8,6 +8,6 @@ run_list(
 override_attributes(
  "tomcat" => {
  	"base_version" => "7",
- 	"port" => "8080"
+ 	"port" => "80"
  }
 )
