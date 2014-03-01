@@ -130,8 +130,16 @@ change the Node run_list from Worsktation
 
 	-	knife node run_list add <NODE_NAME> "recipe["XXX"]"
 
+To install some cookbook from github
+
+	-	gem install knife-github-cookbooks
+	-	knife cookbook github install <USERNAME>/<REPO>
+
 For creating new cookbook 
 
 	- 	knife cookbook create <COOKBOOK_NAME>
 
+Note : Make sure whatever you change you update that in your version control. For writing first cookbook use to create directly in UI that make you easier and once you understand the process use only workstation.
+
+Happy Cooding..!
 
