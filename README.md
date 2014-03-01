@@ -51,41 +51,59 @@ Node(System) Setup
 
 
 Exercise 1 :
-------------
+-------------------
 
 What we want :
-	1) Want to install apache in the machine and add the sample index.html.
-	2) Change configuration and update node.
+
+	- Want to install apache in the machine and add the sample index.html.
+
+	- Change configuration and update node.
 
 How to do that :
-	1) Create a first cookbook "apache".
-	2) Bootstrap first node using knife.
-	3) Create index.html in file and update the recipe to put index.html in node location /var/www/.
-	4) Update the node.
-	5) Check the effect.
+
+	- Create a first cookbook "apache".
+
+	- Bootstrap first node using knife.
+
+	- Create index.html in file and update the recipe to put index.html in node location /var/www/.
+
+	- Update the node.
+
+	- Check the effect.
 
 Exercise 2 :
 ------------
 
 What we want :
-	1) You have an infrastructure with Load Balancer & Webserver now if you add another Webserver then your load balancer should update with that new node.
+
+	- You have an infrastructure with Load Balancer & Webserver now if you add another Webserver then your load balancer should update with that new node.
 
 How to do that :
-	1) Create 2 Roles (Loadbalancer & Webserver)
-	2) Bootstrap 2 nodes with webserver and loadbalancer role.
-	3) Check the loadbalancer from AWS and see if that server has webserver role entry.
-	4) Add another node as a webserver role.
-	5) Now conform that your load balancer should have entry to new node.
+
+	- Create 2 Roles (Loadbalancer & Webserver)
+
+	- Bootstrap 2 nodes with webserver and loadbalancer role.
+
+	- Check the loadbalancer from AWS and see if that server has webserver role entry.
+
+	- Add another node as a webserver role.
+
+	- Now conform that your load balancer should have entry to new node.
 
 
 Exercise 3 : (chef-solo)
 ------------------------
 
 What we want :
-	1) Install tomcat & java cookbook in the Node machine using chef-solo.
+
+	- Install tomcat & java cookbook in the Node machine using chef-solo.
 
 How to do that :
-	1) Download the cookbook from the https://github.com/amitpatelinfo/chef-solo
-	2) Connect to the node and install chef-solo.
-	3) Execute chef-solo in node and make sure your webpage running on local machine.
-	4) You can verify by curl localhost:8080
+
+	- Download the cookbook from the https://github.com/amitpatelinfo/chef-solo
+
+	- Connect to the node and install chef-solo.
+
+	- Execute chef-solo in node and make sure your webpage running on local machine.
+
+	- You can verify by curl localhost:8080
