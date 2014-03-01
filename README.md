@@ -107,3 +107,31 @@ How to do that :
 	- Execute chef-solo in node and make sure your webpage running on local machine.
 
 	- You can verify by curl localhost:8080
+
+
+Some useful commands to run excercise
+--------------------------------------
+
+Add AWS environement variables
+	
+	- export AWS_ACCESS_KEY_ID = <ACCESS_ID>
+	- export AWS_SECRET_ACCESS_KEY = <ACCESS_KEY>
+	- export AWS_SSH_KEY_ID = <KEYPAIR_NAME>
+
+Install Knife-ec2 plugin
+
+	-	gem install knife-ec2
+
+Bootstrap the ec2 node using knife
+
+	-	knife ec2 server create -I <IMAGE_NAME> -x ubuntu -G <SECURITY_GROUP> -N <NODE_NAME> -i <AWS_PEM>
+
+change the Node run_list from Worsktation
+
+	-	knife node run_list add <NODE_NAME> "recipe["XXX"]"
+
+For creating new cookbook 
+
+	- 	knife cookbook create <COOKBOOK_NAME>
+
+
